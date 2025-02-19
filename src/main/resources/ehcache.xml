@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns="http://www.ehcache.org/ehcache/3.9"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.ehcache.org/ehcache/3.9 http://www.ehcache.org/ehcache-3.9.xsd">
+
+    <cache alias="com.example.domain.Event">
+        <key-type>java.lang.Long</key-type>
+        <value-type>com.example.domain.Event</value-type>
+        <heap>1000</heap> <!-- Max entries in heap -->
+        <disk persistent="true" /> <!-- Disk-based storage for overflow -->
+    </cache>
+</ehcache>
