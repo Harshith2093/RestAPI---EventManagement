@@ -34,7 +34,7 @@ import lombok.ToString;
 public class Event {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(stratergy = generatedType.Identity)
 	private int id;
 	@JsonProperty(value = "Event-Name")
 	@NotBlank
